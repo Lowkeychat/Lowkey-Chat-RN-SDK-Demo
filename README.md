@@ -2,7 +2,7 @@
 
 This is a demo app for [Lowkey Chat SDK for React Native](https://www.npmjs.com/package/@devlowkey/chat-sdk-react-native).
 
-## Get started
+## Run locally
 
 1. Install dependencies:
 
@@ -17,4 +17,4 @@ This is a demo app for [Lowkey Chat SDK for React Native](https://www.npmjs.com/
     npm run ios
    ```
 
-Or run `start` script open the app in a [Expo development build](https://docs.expo.dev/develop/development-builds/introduction/)
+Or run `start` script to open the app in a [Expo development build](https://docs.expo.dev/develop/development-builds/introduction/)

@@ -10,6 +10,7 @@
     "build:internal": "npm run build:dev -- --profile=internal",
     "build:debug": "npm run build:dev -- --profile=debug",
     "submit:dev": "cross-env EXPO_PUBLIC_APP_ENV=development eas submit --no-wait --profile=development",
+    "update:dev": "cross-env EXPO_PUBLIC_APP_ENV=development eas update --branch development",
     "test": "jest --watchAll",
     "lint": "expo lint"
   },
@@ -18,7 +19,7 @@
   },
   "dependencies": {
     "@devlowkey/chat-sdk-core": "~0.0.11",
-    "@devlowkey/chat-sdk-react-native": "~0.0.26",
+    "@devlowkey/chat-sdk-react-native": "~0.0.28",
     "@react-native-clipboard/clipboard": "~1.13.2",
     "@react-navigation/bottom-tabs": "^7.0.0",
     "@react-navigation/native": "^7.0.0",
@@ -30,6 +31,7 @@
     "expo-splash-screen": "~0.29.15",
     "expo-status-bar": "~2.0.0",
     "expo-system-ui": "~4.0.5",
+    "expo-updates": "~0.26.10",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-native": "0.76.5",
@@ -42,14 +44,14 @@
     "react-native-screens": "~4.1.0",
     "react-native-svg": "15.8.0",
     "react-native-svg-transformer": "^1.5.0",
-    "react-native-unistyles": "^2.10.0",
-    "expo-updates": "~0.26.10"
+    "react-native-unistyles": "^2.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/jest": "^29.5.12",
     "@types/react": "~18.3.12",
     "@types/react-test-renderer": "^18.3.0",
+    "cross-env": "^7.0.3",
     "jest": "^29.2.1",
     "jest-expo": "~52.0.2",
     "react-test-renderer": "18.3.1",
