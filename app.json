@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Lowkey RN SDK Demo",
+    "slug": "lowkey-rn-sdk-demo",
+    "owner": "devlowkey",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "lowkey-rn-sdk-demo",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "runtimeVersion": {
+      "policy": "appVersion",
+    },
+    "updates": {
+      "url": "https://u.expo.dev/5c1da15d-0d58-41ac-b6ef-1bfe739c0f7d",
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.lowkey.rnsdkdemo",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "entitlements": {
+        "aps-environment": "development"
+      }
+    },
+    "android": {
+      "package": "com.lowkey.rnsdkdemo"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#14131B"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5c1da15d-0d58-41ac-b6ef-1bfe739c0f7d"
+      }
+    }
+  }
+}

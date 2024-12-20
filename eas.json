@@ -1,0 +1,36 @@
+{
+  "build": {
+    "development": {
+      "channel": "development",
+      "autoIncrement": true,
+      "distribution": "store",
+      "env": {
+        "EXPO_PUBLIC_APP_ENV": "development"
+      }
+    },
+    "debug": {
+      "extends": "development",
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "internal": {
+      "extends": "development",
+      "distribution": "internal"
+    }
+  },
+  "submit": {
+    "development": {
+      "android": {
+        "track": "internal",
+        "releaseStatus": "draft"
+      },
+      "ios": {
+        "ascAppId": "6569235888",
+        "appleTeamId": "73JT997M96"
+      }
+    }
+  },
+  "cli": {
+    "appVersionSource": "remote"
+  }
+}
