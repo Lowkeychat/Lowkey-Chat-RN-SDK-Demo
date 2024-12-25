@@ -55,7 +55,7 @@ export default function RootLayout(): ReactElement | null {
     <LowkeyChatProvider lowkeyClient={lowkeyClient}>
       <LowkeyUiProvider>
         <App />
-        <StatusBar translucent />
+        <StatusBar style='light' translucent />
       </LowkeyUiProvider>
     </LowkeyChatProvider>
   );
