@@ -18,7 +18,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@devlowkey/chat-sdk-core": "~0.0.12",
+    "@devlowkey/chat-sdk-core": "~0.0.13",
     "@devlowkey/chat-sdk-react-native": "~0.0.31",
     "@react-native-clipboard/clipboard": "~1.13.2",
     "@react-navigation/bottom-tabs": "^7.0.0",
