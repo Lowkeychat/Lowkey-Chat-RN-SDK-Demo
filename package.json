@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@devlowkey/chat-sdk-core": "~0.0.13",
-    "@devlowkey/chat-sdk-react-native": "~0.0.31",
+    "@devlowkey/chat-sdk-react-native": "~0.0.32",
     "@react-native-clipboard/clipboard": "~1.13.2",
     "@react-navigation/bottom-tabs": "^7.0.0",
     "@react-navigation/native": "^7.0.0",
