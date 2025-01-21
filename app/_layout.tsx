@@ -1,10 +1,10 @@
 import { lowkeyClient } from '@/libs/lowkey-client';
-import { LowkeyChatProvider, LowkeyUiProvider, useLowkeyChat } from '@devlowkey/chat-sdk-react-native';
+import { LowkeyChatProvider, LowkeyUiProvider, useLowkeyChat, useLowkeyUi } from '@devlowkey/chat-sdk-react-native';
 import { useFonts } from 'expo-font';
 import { router, Stack, useRootNavigationState } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
-import { ReactElement, useEffect } from 'react';
+import { Fragment, ReactElement, useEffect } from 'react';
 
 export { ErrorBoundary } from 'expo-router';
 
@@ -18,6 +18,7 @@ function App() {
 
   const rootNavigationState = useRootNavigationState();
   const navigatorReady = rootNavigationState?.key != null;
+  const { themeVariant } = useLowkeyUi();
   const { user } = useLowkeyChat();
 
   useEffect(() => {
@@ -43,10 +44,13 @@ function App() {
   }
 
   return (
-    <Stack screenOptions={{ headerShown: false }}>
-      <Stack.Screen name='index' />
-      <Stack.Screen name='chats' />
-    </Stack>
+    <Fragment>
+      <Stack screenOptions={{ headerShown: false }}>
+        <Stack.Screen name='index' />
+        <Stack.Screen name='chats' />
+      </Stack>
+      <StatusBar style={themeVariant === 'dark' ? 'light' : 'dark'} translucent />
+    </Fragment>
   );
 }
 
@@ -55,7 +59,6 @@ export default function RootLayout(): ReactElement | null {
     <LowkeyChatProvider lowkeyClient={lowkeyClient}>
       <LowkeyUiProvider>
         <App />
-        <StatusBar style='light' translucent />
       </LowkeyUiProvider>
     </LowkeyChatProvider>
   );
