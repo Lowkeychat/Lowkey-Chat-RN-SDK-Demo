@@ -6,6 +6,9 @@
       "distribution": "store",
       "env": {
         "EXPO_PUBLIC_APP_ENV": "development"
+      },
+      "android": {
+        "distribution": "internal"
       }
     },
     "debug": {
